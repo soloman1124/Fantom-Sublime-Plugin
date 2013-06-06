@@ -1,0 +1,16 @@
+{ 
+    "name": "Fantom",
+    "scopeName": "source.fantom",
+    "fileTypes": ["fan"],
+    "uuid": "afbaa72c-8749-4450-b363-8f734447cbdf",
+    "patterns": [
+        {
+            "match": "\\b(public|private|static)\\b",
+            "name": "storage.modifier.fantom"
+        }, 
+        {
+            "match": "echo", 
+            "name": "support.function.fantom"
+        }
+    ]
+}

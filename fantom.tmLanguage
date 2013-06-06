@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>fan</string>
+	</array>
+	<key>name</key>
+	<string>Fantom</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(public|private|static)\b</string>
+			<key>name</key>
+			<string>storage.modifier.fantom</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>echo</string>
+			<key>name</key>
+			<string>support.function.fantom</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.fantom</string>
+	<key>uuid</key>
+	<string>afbaa72c-8749-4450-b363-8f734447cbdf</string>
+</dict>
+</plist>

@@ -2,14 +2,12 @@ Fantom Sublime Plugin
 =====================
 
 
-The Problem
-===========
+##The Problem##
 
 
-Getting Started
-===============
+
+##Getting Started##
 
 
-How to Use
-==========
+##How to Use##
 

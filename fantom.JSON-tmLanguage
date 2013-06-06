@@ -3,7 +3,23 @@
     "scopeName": "source.fantom",
     "fileTypes": ["fan"],
     "uuid": "afbaa72c-8749-4450-b363-8f734447cbdf",
+    "foldingStartMarker": "(\\{\\s*$|^\\s*// \\{\\{\\{)", 
+    "foldingStopMarker": "^\\s*(\\}|// \\}\\}\\}$)",
+
     "patterns": [
+        {
+            "match": "\\b(?:(using)|(as))\\b",
+            "captures": {
+                "1": { "name": "keyword.control.using.fantom" },
+                "2": { "name": "keyword.control.using.as.fantom" }   
+            }
+        },
+        {
+            "match": "\\w+(\\:\\:)\\w+",
+            "captures": {
+                "1": { "name": "keyword.operator.fantom" }
+            }
+        },
         {
             "match": "\\b(public|private|static)\\b",
             "name": "storage.modifier.fantom"

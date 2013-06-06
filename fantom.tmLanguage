@@ -6,10 +6,43 @@
 	<array>
 		<string>fan</string>
 	</array>
+	<key>foldingStartMarker</key>
+	<string>(\{\s*$|^\s*// \{\{\{)</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*(\}|// \}\}\}$)</string>
 	<key>name</key>
 	<string>Fantom</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.using.fantom</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.using.as.fantom</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(?:(using)|(as))\b</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.fantom</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\w+(\:\:)\w+</string>
+		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(public|private|static)\b</string>

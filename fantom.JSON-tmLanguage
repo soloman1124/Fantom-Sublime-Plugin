@@ -27,6 +27,29 @@
         {
             "match": "echo", 
             "name": "support.function.fantom"
+        }, 
+        { "include": "#fantom" }
+    ],
+
+    "repository": {
+
+        "fantom": {
+            "patterns": [
+                { "include": "#class-object" }
+            ]
+        }, 
+        "class-object": {
+            "patterns": [
+                {
+                    "match": "\\b((:?[a-z]\\w*\\.)*[A-Z]\\w+\\b(:?\\[\\s*\\])*)\\b",
+                    "name": "storage.type.class.fantom"
+                }
+            ]
+        },
+        "classes": { 
+            "name": "meta.definition.class.fantom",
+            "begin": "",
+            "end": ""
         }
-    ]
+    }
 }
